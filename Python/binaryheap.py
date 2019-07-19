@@ -1,4 +1,17 @@
-# BinaryHeap
+# ----------------------------------------------------------
+# ----------------------------------------------------------
+# BinaryHeap DataStructure implemented on Python3.
+# ----------------------------------------------------------
+# ----------------------------------------------------------
+
+# Components:
+'''
+    A python3 list AbstractDataType
+'''
+
+# ----------------------------------------------------------
+# Class BinaryMinHeap
+# ----------------------------------------------------------
 class BinaryMinHeap(object):
     """BinaryMinHeap: a partially ordered collection with efficient methods to
     insert new items in partial order and to access and remove its minimum item.
@@ -39,3 +52,14 @@ class BinaryMinHeap(object):
 
 
     # Function right child index ( self , index )
+
+
+# ----------------------------------------------------------
+# Class BinaryMaxHeap
+# ----------------------------------------------------------
+
+class BinaryMaxHeap(object):
+    """BinaryMaxHeap: a partially ordered collection with efficient methods to
+    insert new items in partial order and to access and remove its maximun item.
+    Items are stored in a dynamic array that implicitly represents a complete
+    binary tree with root node at index 0 and last leaf node at index n-1."""
