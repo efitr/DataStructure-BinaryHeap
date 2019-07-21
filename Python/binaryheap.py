@@ -7,8 +7,8 @@
 # Components:
 '''
     The python3 programming language.
-    A python3 class, an object oriented approach towards programming
-    A python3 list AbstractDataType
+    A python3 class, an object oriented approach towards programming.
+    A python3 list AbstractDataType.
 '''
 
 # ----------------------------------------------------------
@@ -22,18 +22,24 @@ class BinaryMinHeap(object):
 
     # Make initializer ( self , items=None )
     def __init__(self, items=None):
-        pass
+        self.binaryheap = []
+        self.lenght = 0
+        for item in items:
+            self.binaryheap.append(item)
+            self.lenght += 1
 
     # Helper function is empty ( self )
     def is_empty(self):
-        pass
+        if self.binaryheap is []:
+            return True
+        return False
 
     # Size function ( self )
     def size(self):
-        pass
+        return self.lenght
 
     # Function get minimun item ( self )
-    def gen_minimun_item(self):
+    def get_minimun_item(self):
         pass
 
     # Delete minimun item function ( self )
@@ -58,15 +64,15 @@ class BinaryMinHeap(object):
 
     # Function parent index ( self , index )
     def parent_index(self, index):
-        pass
+        return (index-1)/2
 
     # Function left child index ( self , index )
     def left_child_index(self, index):
-        pass
+        return (index * 2) + 1
 
     # Function right child index ( self , index )
     def right_child_index(self, index):
-        pass
+        return (index * 2) + 2
 
 # ----------------------------------------------------------
 # Class BinaryMaxHeap
