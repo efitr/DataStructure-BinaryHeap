@@ -22,21 +22,22 @@ class BinaryMinHeap(object):
 
     # Make initializer ( self , items=None )
     def __init__(self, items=None):
-        self.binaryheap = []
-        self.lenght = 0
-        for item in items:
-            self.binaryheap.append(item)
-            self.lenght += 1
+        self.items = []
+        if items:
+            for item in items:
+                self.insert(item)
 
     # Helper function is empty ( self )
     def is_empty(self):
-        if self.binaryheap is []:
+        if self.items != []:
             return True
         return False
 
     # Size function ( self )
     def size(self):
         return self.lenght
+
+    def insert(self, item):
 
     # Function get minimun item ( self )
     def get_minimun_item(self):
@@ -60,7 +61,7 @@ class BinaryMinHeap(object):
 
     # Function last index ( self )
     def last_index(self):
-        pass
+        return self.binaryheap[self.lenght - 1]
 
     # Function parent index ( self , index )
     def parent_index(self, index):
